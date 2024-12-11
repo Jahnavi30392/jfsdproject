@@ -19,6 +19,10 @@ public class Service {
 	public String hello(@PathVariable("name") String name) {
 		return "hello!! " +name;
 	}
+	@GetMapping("/")
+	public String basic() {
+		return "hello!";
+	}
 	
 	@PostMapping("/signup")
 	public String insertuser(@RequestBody User user) {
