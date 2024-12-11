@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController  
-@CrossOrigin
+@CrossOrigin(origins="*")
 public class Service {
 	@Autowired
 	UserDAO dao;
